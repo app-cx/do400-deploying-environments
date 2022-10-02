@@ -1,0 +1,20 @@
+pipeline {
+  agent {
+    node {
+      label 'maven'
+    }
+  }
+  states {
+    state('Test') {
+      steps {
+        echo 'hello'
+      }
+    }
+    state('Package') {
+      steps {
+        echo 'package ok'
+      }
+    }
+  }
+
+}
