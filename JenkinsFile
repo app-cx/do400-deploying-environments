@@ -1,12 +1,12 @@
 pipeline {
   agent any
-  states {
-    state('Test') {
+  stages {
+    stage('Test') {
       steps {
         echo 'hello'
       }
     }
-    state('Package') {
+    stage('Package') {
       steps {
         echo 'package ok'
       }
