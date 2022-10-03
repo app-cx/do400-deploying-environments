@@ -1,18 +1,18 @@
 pipeline {
   agent {
     node {
-     label: 'Maven'
+      label: 'Maven'
     }
   }
   stages {
     stage('Test') {
       steps {
-        echo 'hello'
+        echo 'Hello, Hi.'
       }
     }
     stage('Package') {
       steps {
-        echo 'package ok'
+        echo 'Packaged ok'
       }
     }
   }
