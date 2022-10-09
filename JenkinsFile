@@ -8,12 +8,13 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh './mvnw clean test'
+        Echo 'Hello Test'
       }
     }
     stage('Package') {
       steps {
-        sh './mvnw clean package -DskipTests -Dquarkus.package.type=uber.jar'
+        #sh './mvnw clean package -DskipTests -Dquarkus.package.type=uber.jar'
+        Echo 'Hello Package'
       }
     }
   }
